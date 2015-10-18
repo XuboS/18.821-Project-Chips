@@ -1,0 +1,49 @@
+.cell {
+    background-color: #5E412F;
+    text-align: center;
+    width: 3%;
+    height: 3%;
+}
+
+.cell.more {
+    background-color: #F0A830;
+    color: white;
+}
+
+.cell.three {
+	background-color: #F07818;
+    color: white;
+}
+
+.cell.two {
+	background-color: #78C0A8;
+    color: white;
+}
+
+.cell.one {
+	background-color: #FCEBB6;
+    color: white;
+}
+
+#grid {
+	width: 80%;
+	height: 500px;
+	margin-left: 10%; 
+    margin-right: 10%;
+}
+
+#start{
+	margin-left: 20%;
+}
+
+#stop{
+	margin-right: 20%;
+}
+
+#previous{
+	margin-right: 20%;
+}
+
+#form{
+	margin-left: 20%;
+}

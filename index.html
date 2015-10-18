@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>18.821 Project 2: Chips</title>
+	  <link rel="stylesheet" href="./index.css" type="text/css" charset="utf-8">
+	  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	  <script src="./grid.js" charset='utf-8'></script>
+	  <script src="./index.js" charset='utf-8'></script>
+	</head>
+
+	<body>
+	    <table id='grid'>
+	    </table> 
+	    <button class ='button' id='start'>Start</button>
+	    <button class ='button' id='stop'>Stop</button>
+	    <button class ='button' id='next'>Next</button>
+	    <button class ='button' id='previous'>Previous</button>
+	    <button class ='preset' id='0'>Preset1</button>
+	    <button class ='preset' id='1'>Preset2</button>
+	    <button class ='preset' id='2'>Preset3</button>
+	    <div><form onsubmit="return false" id='form'>
+		  Frequency in msec (default is 200):
+		  <input id='frequency'>
+		</form></div>
+	</body>
+</html>
