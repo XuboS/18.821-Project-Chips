@@ -199,10 +199,10 @@ grid = function(s) {
 	 * @param {r} the index of the row
 	 * @param {c} the index of the column
 	 */ 
-	// that.updateCell = function(r, c) {
-	// 	currentGrid[r][c].update();
-	// 	publishChanges();
-	// };
+	that.updateCell = function(r, c, inc) {
+		currentGrid[r][c].setChips(currentGrid[r][c].getChips()+inc);
+		publishChanges();
+	};
 
 	Object.freeze(that);
 	return that;

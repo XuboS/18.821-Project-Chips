@@ -1,4 +1,6 @@
-var tableSize = 9
+var tableSize = 7
+var frequency = 100;
+
 /**
  * Dynamically creates the table structure in DOM.
  *
@@ -16,8 +18,6 @@ function createTable(tableSize) {
 }
 
 $(function () {
-    var frequency = 200;
-
     createTable(tableSize);
     var g = grid(tableSize);
 
@@ -85,12 +85,12 @@ $(function () {
         g.chooseGrid($(this).attr('id'));
     });
 
-    // // When an entry is clicked, the corresponding cell in the underlying model gets updated (i.e., values flippoed).
-    // $('.cell').click(function() {
-    //     var num = $(this).attr('num');
-    //     g.updateCell((num-num%tableSize)/tableSize, num%tableSize);
-    // });
-
+    // When an entry is clicked, the corresponding cell in the underlying model gets updated (i.e., values increased by 1).
+    $('.cell').click(function() {
+        var num = $(this).attr('num');
+        // console.log(num);
+        g.updateCell((num-num%tableSize)/tableSize, num%tableSize, 1);
+    });
     rebuildTable();
 });
 
